@@ -1,14 +1,12 @@
 class Passing {
     Long id
-    String name
-    String passYds
-    String YdsAtt
-    String Att
+    String competencia
+    String publicacao
+    String inicioVigencia
 
-    Passing(String name, String passYds, String ydsAtt, String att) {
-        this.name = name
-        this.passYds = passYds
-        this.ydsAtt = ydsAtt
-        this.att = att
+    Passing(String competencia, String publicacao, String inicioVigencia) {
+        this.competencia = competencia
+        this.publicacao = publicacao
+        this.inicioVigencia = inicioVigencia
     }
 }
