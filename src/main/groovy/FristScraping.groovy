@@ -14,19 +14,13 @@ class FristScraping {
         //5 - Criando uma lista de todos os tr's do tbody obtido
         List<Element> arquivos = tbody.getElementsByTag("tr")
         //6 - Criando uma lista vazia para Guardar os dados dos tr's convertidos
-        List<Passing> arquivosObjects = new ArrayList<>()
+        List<Element> atributesList = new ArrayList<>()
         //7 - Iterando por cada tr e convertendo-o em um Passing. Em seguida inserindo-o na lista de Passings
         for (Element arquivo: arquivos) {
             //Listando todos os atributos do tr em questão
             List<Element> attributes = arquivo.getElementsByTag("td");
-            //criando o objeto e inserindo nele os atributos extraidos do td
-            Passing passing = new Passing();
-            passing.setName(attributes.get(0).text());
-            passing.setPassYds(attributes.get(1).text());
-            passing.setYdsAtt(attributes.get(2).text());
-            passing.setAtt(attributes.get(3).text());
-            //adicionando o objeto na lista de objetos Passing
-            arquivosObjects.add(passing);
+            //Adicionando atributos selecionados de cada aruivo em um lista
+            atributesList.add(attributes);
         
         //1 - URL do site a ser acessado
         String url = "https://jovemnerd.com.br/";
