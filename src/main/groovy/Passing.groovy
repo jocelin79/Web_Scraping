@@ -1,5 +1,4 @@
 class Passing {
-    Long id
     String competencia
     String publicacao
     String inicioVigencia
