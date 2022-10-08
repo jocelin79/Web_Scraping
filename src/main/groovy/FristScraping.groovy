@@ -3,9 +3,9 @@ import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 
 class FristScraping {
-  
+
   static class InvalidFileTypeException extends Exception {}
-  
+
   static fristScraping() {
       //1 - URL do site a ser acessado
       String url = "https://www.gov.br/ans/pt-br/assuntos/prestadores/padrao-para-troca-de-informacao-de-saude-suplementar-2013-tiss/padrao-tiss-2013-setembro-2022"
@@ -45,11 +45,7 @@ class FristScraping {
 
 
       try {
-          //String savedFileName = link.text()
-          //if (!savedFileName.endsWith(".zip")) savedFileName.concat(".zip")
-          println("OK01")
           FileOutputStream fos = new FileOutputStream("/home/jocelinnunes/Documentos/Proficional/Programação/projetos/Web_Screaping/Download/communicate.zip")
-          println ("OK02")
           fos.write(bytes)
           fos.close()
 
