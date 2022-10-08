@@ -13,11 +13,12 @@ static main(String[] args) {
 
         switch (response) {
             case "1":
-                SecundScraping secundSc = new SecundScraping()
-                secundSc.secundScraping()
+                FristScraping fscp = new FristScraping()
+                fscp.fristScraping()
                 break
             case "2":
-                print("Hellow!")
+                SecundScraping sscp = new SecundScraping()
+                sscp.secundScraping()
                 break
         }
     }
